@@ -9,3 +9,40 @@
 .high-usage {
   color: red;
 }
+
+section {
+  width: 40%;
+  border-radius: 10px;
+  background-color: #9DD9DB;
+  box-shadow: 8px 16px #3A7B7D;
+  display: inline-block;
+}
+body {
+  text-align: center;
+}
+
+#temperature {
+  background-color: #ffffff;
+  border: 2px solid #010101;
+  width: 50%;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  padding: 5px;
+}
+
+.button {
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #010101;
+  border-radius: 10px;
+  margin: 2px
+}
+
+h1 {
+  color: #010101;
+}
+
+.top {
+  height: 30px;
+}
