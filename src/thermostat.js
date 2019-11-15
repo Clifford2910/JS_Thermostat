@@ -1,30 +1,30 @@
 'use strict';
 
-function Thermostat(){
+function Thermostat() {
   this.temperature = 20;
   this.MIN_TEMP = 10;
   this.maxTemp = 25;
 };
 
-Thermostat.prototype.currentTemp = function(){
+Thermostat.prototype.currentTemp = function() {
   return this.temperature
 };
 
-Thermostat.prototype.isMinTemp = function(){
+Thermostat.prototype.isMinTemp = function() {
   return this.temperature === this.MIN_TEMP;
 };
 Thermostat.prototype.isMaxTemp = function () {
   return this.temperature === this.maxTemp;
 };
 
-Thermostat.prototype.increaseTemp = function(){
+Thermostat.prototype.increaseTemp = function() {
   if (this.isMaxTemp()) {
     return;
   }
   this.temperature += 1;
   return this.temperature
 };
-Thermostat.prototype.decreaseTemp = function(){
+Thermostat.prototype.decreaseTemp = function() {
   if (this.isMinTemp()) {
     return;
   }
@@ -36,11 +36,11 @@ Thermostat.prototype.resetTemp = function () {
   return this.temperature
 };
 
-Thermostat.prototype.powerSavingModeOn = function (){
+Thermostat.prototype.powerSavingModeOn = function () {
   this.maxTemp = 25;
   return true
 };
-Thermostat.prototype.powerSavingModeOff = function (){
+Thermostat.prototype.powerSavingModeOff = function () {
   this.maxTemp = 32;
   return false
 };
