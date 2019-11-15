@@ -6,10 +6,6 @@ function Thermostat() {
   this.maxTemp = 25;
 };
 
-Thermostat.prototype.currentTemp = function() {
-  return this.temperature
-};
-
 Thermostat.prototype.isMinTemp = function() {
   return this.temperature === this.MIN_TEMP;
 };
@@ -17,6 +13,9 @@ Thermostat.prototype.isMaxTemp = function () {
   return this.temperature === this.maxTemp;
 };
 
+Thermostat.prototype.currentTemp = function() {
+  return this.temperature
+};
 Thermostat.prototype.increaseTemp = function() {
   if (this.isMaxTemp()) {
     return;
